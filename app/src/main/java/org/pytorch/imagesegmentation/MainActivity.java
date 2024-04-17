@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements Runnable {
             }
         });
 
-        // Create File objects for AI models.
+        // Create File objects for AI models. Load AI models in Java classes.
         try {
             poresTFModelFile = new File(MyUtil.assetFilePath(getApplicationContext(), "CFA_pores_segmented_effnet_ep_8_20230329_v1.tflite"));
             darkCircleTFModelFile = new File(MyUtil.assetFilePath(getApplicationContext(), "darkcircles_v1_20231212_metadata.tflite"));
